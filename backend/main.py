@@ -156,7 +156,6 @@ def run_as_server():
 
 
 def run_in_console():
-    # load_data()
     print("[*] Hey I'm Donna, Tell me how can i help you today!!")
     while True:
         task = input("[*] You: ").lower()
@@ -176,8 +175,10 @@ def run_in_console():
             print(query_mongo_db(client, data))
 
 if __name__ == "__main__":
-    res = input("[*] DO YOU WANT TO RUN IN SERVER Y/N, ").lower()
-    if res == 'y':
+    load_data()
+
+    res = input("[*] DO YOU WANT TO RUN IN (1). SERVER OR (2). CONSOLE, ")
+    if res == '1':
         run_as_server()
-    elif res == 'n':
+    elif res == '2':
         run_in_console()

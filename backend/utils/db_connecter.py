@@ -37,3 +37,5 @@ def connect_to_mongodb(db_name: str):
 # res = client['CASE'].count_documents({})
 
 # print(res)
+
+connect_to_mysql('HOSPITAL')
