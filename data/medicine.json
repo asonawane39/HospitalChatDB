@@ -1,0 +1,106 @@
+[
+    {
+        "medicine_id": "0001",
+        "medicine_name": "Ceftriaxone 1g"
+    },
+    {
+        "medicine_id": "0002",
+        "medicine_name": "Glimepiride 2mg"
+    },
+    {
+        "medicine_id": "0003",
+        "medicine_name": "Zanamivir 10mg"
+    },
+    {
+        "medicine_id": "0004",
+        "medicine_name": "Acetaminophen 500mg"
+    },
+    {
+        "medicine_id": "0005",
+        "medicine_name": "Atorvastatin 40mg"
+    },
+    {
+        "medicine_id": "0006",
+        "medicine_name": "Sulfasalazine 500mg"
+    },
+    {
+        "medicine_id": "0007",
+        "medicine_name": "Codeine 30mg"
+    },
+    {
+        "medicine_id": "0008",
+        "medicine_name": "Insulin 10 units"
+    },
+    {
+        "medicine_id": "0009",
+        "medicine_name": "Paracetamol 500mg"
+    },
+    {
+        "medicine_id": "0010",
+        "medicine_name": "Methotrexate 15mg"
+    },
+    {
+        "medicine_id": "0011",
+        "medicine_name": "Ibuprofen 400mg"
+    },
+    {
+        "medicine_id": "0012",
+        "medicine_name": "Oseltamivir 75mg"
+    },
+    {
+        "medicine_id": "0013",
+        "medicine_name": "Oxycodone 5mg"
+    },
+    {
+        "medicine_id": "0014",
+        "medicine_name": "Ibuprofen 200mg"
+    },
+    {
+        "medicine_id": "0015",
+        "medicine_name": "Diphenhydramine 25mg"
+    },
+    {
+        "medicine_id": "0016",
+        "medicine_name": "Clopidogrel 75mg"
+    },
+    {
+        "medicine_id": "0017",
+        "medicine_name": "Fexofenadine 180mg"
+    },
+    {
+        "medicine_id": "0018",
+        "medicine_name": "Hydroxychloroquine 200mg"
+    },
+    {
+        "medicine_id": "0019",
+        "medicine_name": "Metronidazole 500mg"
+    },
+    {
+        "medicine_id": "0020",
+        "medicine_name": "Azithromycin 250mg"
+    },
+    {
+        "medicine_id": "0021",
+        "medicine_name": "Metformin 500mg"
+    },
+    {
+        "medicine_id": "0022",
+        "medicine_name": "Amoxicillin 500mg"
+    },
+    {
+        "medicine_id": "0023",
+        "medicine_name": "Loratadine 10mg"
+    },
+    {
+        "medicine_id": "0024",
+        "medicine_name": "Aspirin 81mg"
+    },
+    {
+        "medicine_id": "0025",
+        "medicine_name": "Levofloxacin 500mg"
+    },
+    {
+        "medicine_id": "0026",
+        "medicine_name": "Amantadine 100mg"
+    }
+]

@@ -1,0 +1,45 @@
+You are working with 3 databases:
+
+1. HOSPITAL (SQL Database):
+   - Tables:
+     - MED_CASE(CASE_ID, DESCRIPTION, STATUS, LABWORK, PRESCRIPTION, PATIENT_ID, DOCTOR_ID)
+     - DOCTOR(DOCTOR_ID, FIRST_NAME, LAST_NAME, EMAIL, CONTACT_NUMBER, SPECIALIZATION)
+     - PATIENT(PATIENT_ID, FIRST_NAME, LAST_NAME, DOB, SEX, ADDRESS, PHONE_NUMBER, BLOOD)
+
+2. CASE_APPOINTMENTS (MongoDB Database):
+   - Collections:
+     - APPOINTMENTS(appointment_id, appointment_date, appointment_time, case_id)
+     - CASE(case_id, description, status, labwork, prescription, patient_id, doctor_id)
+
+3. CASE_PRESCRIPTIONS (MongoDB Database):
+   - Collections:
+     - CASE(case_id, description, status, labwork, prescription, patient_id, doctor_id)
+     - PRESCRIPTION(prescription_id, case_id)
+     - MEDICINE(medicine_id, medicine_name)
+     - PRESCRIPTION_ITEMS(prescription_id, sr_no, medicine_id, quantity)
+
+Your task is to {task}. Your output must be a JSON object with the following fields:
+
+- "query": the query to be executed (in SQL or MongoDB syntax, based on dbtype)
+- "dbname": the name of the database
+- "tablename": the table (for SQL) or collection (for MongoDB)
+- "dbtype": one of ["SQL", "NoSQL"]
+- "dataheaders": the list of field/column names that the query will return
+- "response_length": "single" if 1 record is returned, "multiple" if multiple records are returned
+
+Rules:
+- If the task is about doctors or patients, always use the SQL database (HOSPITAL).
+- If the task is about appointments, always use the NoSQL database (CASE_APPOINTMENTS).
+- If the task is about prescriptions, always use the NoSQL database (CASE_PRESCRIPTIONS).
+- When dbtype is "NoSQL", generate **MongoDB query syntax** (use find, aggregate, or lookup).
+- Do not use SQL syntax for NoSQL databases.
+- Return only the JSON response. No explanation or extra text.
+
+Examples of MongoDB queries you can use:
+- db.COLLECTION.find({field: value})
+- db.COLLECTION.aggregate([...])
+
+Be precise with syntax for each type of database.
+
+
+You are working with 3 databases: 1. HOSPITAL database which is an SQL database containing the tables - MED_CASE (CASE_ID,DESCRIPTION,STATUS,LABWORK,PRESCRIPTION,PATIENT_ID,DOCTOR_ID) which contains details about every medical case the hospital has dealt with, DOCTOR (DOCTOR_ID,FIRST_NAME,LAST_NAME,EMAIL,CONTACT_NUMBER,SPECIALIZATION) which contains details about every doctor and PATIENT(PATIENT_ID,FIRST_NAME,LAST_NAME,DOB,SEX,ADDRESS,PHONE_NUMBER,BLOOD) which contains all patient details;2. CASE_APPOINTMENTS which is a MongoDB collection containing the documents - APPOINTMENTS(appointment_id,appointment_date,appointment_time,case_id) which contains details about appointments at the hospital and CASE(case_id,description,status,labwork,prescription,patient_id,doctor_id) which contains details about every medical case the hospital has dealt with;3. CASE_PRESCRIPTIONS which is another MongoDB collection containing the documents - CASE(case_id,description,status,labwork,prescription,patient_id,doctor_id) which contains details about every medical case the hospital has dealt with and PRESCRIPTION(prescription_id,case_id) which contains the prescription IDs for respective cases and MEDICINE(medicine_id,medicine_name) conatining all available medicines and PRESCRIPTION_ITEMS(prescription_id,sr_no,medicine_id,quantity) containing prescription records issued by the hospital.MED_CASE table contains the medical cases in SQL database while CASE collection stores the cases for the MongoDB collections(CASE_APPOINTMENTS and CASE_PRESCRIPTIONS). task is to {task} Give me a json response which contains fields like 'query', 'dbname','tablename', 'dbtype'(dbtype contains either 'SQL' or 'NoSQL') ,'dataheaders' containing the column names of the results and 'response_length' which contains 'single' or 'multiple'. When task is related to Doctors or Patients make sure to query the HOSPITAL SQL database, when task is related to Prescriptions make sure to query CASE_PRESCRIPTIONS MongoDB collection, when task is related to Appointments make sure to query CASE_APPOINTMENTS MongoDB collection. no other text response. Only json object. Make sure that your queries are syntactically correct
