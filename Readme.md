@@ -24,7 +24,7 @@ This system integrates **LLM capabilities** with both **relational** (MySQL) and
 * ✅ **MySQL** – Relational database for structured data
 * ✅ **MongoDB** – NoSQL database for unstructured records
 * ✅ **Python** – Backend scripting and API handling
-* ✅ **Node.js & npm** – Frontend development
+* ✅ **ReactJS & npm** – Frontend development
 
 ---
 
