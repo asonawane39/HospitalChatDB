@@ -76,6 +76,7 @@ python main.py
 
 ```bash
 cd frontend
+cd UI
 npm install
 npm run dev
 ```
